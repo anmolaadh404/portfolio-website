@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anmol Adhikari - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <!-- Hero Section with Auto-Changing Text -->
+    <header class="hero">
+        <div class="container">
+        <img src="C:\Users\dell\Desktop\portfolio 2\WhatsApp Image 2024-11-15 at 9.30.28 PM.jpeg" alt="Anmol's Photo" class="profile-photo">
+        
+         <h1>Anmol Adhikari</h1>
+            <p id="dynamic-text">Web Developer</p> <!-- This text will auto-change -->
+            <div class="socials">
+                <a href="https://github.com/anmolaadh404" <i class="fa-brands fa-github" target="_blank"></i></a>
+                <a href="https://www.linkedin.com/in/anmol-adhikari-ab01b82ab/"<i class="fa-brands fa-linkedin-in" target="_blank"></i></a>
+                <a href="https://x.com/Anmol_adh?t=SmHG6fVaQhWNwlXc_o7bMw&s=09"<i class="fa-brands fa-x-twitter" alt="X-twitter"  target="_blank"></i></a>
+                <a href="https://www.instagram.com/anmoladhikariii?igsh=MXdyY2N1MDhvaHF0YQ=="<i class="fa-brands fa-instagram" alt="instagram" target="_blank"></i></a>
+                <a href="mailto:anmoladhikari331@gmail.com" <i class="fa-solid fa-envelope" target="_blank alt="Gmail"></i></a>
+                <a href="https://www.google.com/maps/place/Kathmandu+44600/@27.7090302,85.2849328,13z/data=!3m1!4b1!4m6!3m5!1s0x39eb198a307baabf:0xb5137c1bf18db1ea!8m2!3d27.7103145!4d85.3221634!16zL20vMDRjeDU?entry=ttu&g_ep=EgoyMDI0MTEwNi4wIKXMDSoASAFQAw%3D%3D" <i class="fa-sharp fa-regular fa-location-dot" target="_blank" alt="fa-location-dot"></i></a>
+                <a href="https://medium.com/@glad_coffee_spider_45" <i class="fa-brands fa-medium" target="_blank" alt="Medium"></i></a>
+            </div>
+
+    
+        </div>
+    </header>
+
+    <!-- About Me Section -->
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Hi.I am Anmol Adhikari an Bachelor in Computer Application Student at Madan Bhandari Memorial Collage. </p>
+        </div>
+    </section>
+
+    <!-- Tab Navigation for Projects and Skills -->
+    <div class="tabs">
+        <button class="tab-btn active" onclick="openTab('projects')">Projects</button>
+        <button class="tab-btn" onclick="openTab('skills')">Skills</button>
+    </div>  
+
+    <!-- Projects Section -->
+    
+
+    <section id="projects" class="tab-content active ">
+        <div class="container">
+            
+           
+            <div class="projects-grid">
+                <div class="project">
+                    <h3>Project 1</h3>
+                    <p>Brief description of Project 1. Describe the technologies used and unique features.</p>
+                </div>
+                <div class="project">
+                    <h3>Project 2</h3>
+                    <p>Brief description of Project 2.</p>
+                </div>
+                <div class="project">
+                    <h3>Project 3</h3>
+                    <p>Brief description of Project 3.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+
+    <section id="skills" class="tab-content">             
+            <div class="tabs">
+            <center><div class="skill"><i class="fa-brands fa-html5" width="4" 
+                alt="HTML"></i><p></p><B>HTML</B></p></div> </center>
+            <Center><div class="skill"><i class="fa-brands fa-css3-alt" width="5"
+                 alt="CSS"></i><p><B>CSS</B></p></div></Center>
+                <center><div class="skill"><i class="fa-brands fa-js" width="2" 
+                    alt="Java Script"></i><p><B>Java Script</B></p></div></center>      
+                <center><div class="skill"><i class="fa-brands fa-react" width="9" 
+                    alt="React"></i><p><B>React</B></p></div></center>
+            <center><div class="skill"><i class="fa-brands fa-node-js" width="1"
+                 alt="Node JS"></i><P><B>Node JS</B></P></div></center>
+            <Center><div class="skill"><i class="fa-brands fa-python" width="4"
+                 alt="Python"></i><P><B>Python</B></P></div></Center>
+            <center><div class="skill"><i class="fa-solid fa-c" width="5" 
+                alt="C"></i><P><B>C</B></P></div></center>
+            <center><div class="skill"><i class="fa-solid fa-database" at="Database" width="4" 
+                alt="Database"></i><P><B>Database</B></P></div>
+</center>        
+            </div>  
+</section>
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form id="contact-form">
+                <form id="contact-form" action="https://formspree.io/f/xeoqkbqb" method="POST">
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            <div id="form-response"></div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
