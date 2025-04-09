@@ -1,4 +1,3 @@
-
 const textArray = ["Web Developer", "Designer", "Programmer"];
 let textIndex = 0;
 
